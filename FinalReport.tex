@@ -1,0 +1,70 @@
+\documentclass[9pt,twocolumn,twoside,lineno]{pnas-new}
+
+
+\templatetype{pnasresearcharticle} % Choose template 
+% {pnasresearcharticle} = Template for a two-column research article
+% {pnasmathematics} = Template for a one-column mathematics article
+% {pnasinvited} = Template for a PNAS invited submission
+
+%%% Include Packages Here %%%
+\usepackage{braket}
+\usepackage{array}
+\usepackage{pgfplots}
+\usepackage[caption=false]{subfig}
+\usepackage{graphicx,epstopdf}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Final Report Temporal Networks Project}
+\author{Author 1}
+\author{Author 2} 
+\author{Author 3}
+
+
+
+% Please include corresponding author, author contribution and author declaration information
+\authorcontributions{Please provide details of author contributions here.}
+\authordeclaration{Please declare any conflict of interest here.}
+
+
+% Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
+\keywords{Keyword 1 $|$ Keyword 2 $|$ Keyword 3 $|$ ...} 
+
+\begin{abstract}
+In this project, we did xxxxx
+\end{abstract}
+
+\dates{This manuscript was compiled on \today}
+\doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+
+\begin{document}
+
+% Optional adjustment to line up main text (after abstract) of first page with line numbers, when using both lineno and twocolumn options.
+% You should only change this length when you've finalised the article contents.
+\verticaladjustment{-2pt}
+
+\maketitle
+\thispagestyle{firststyle}
+\ifthenelse{\boolean{shortarticle}}{\ifthenelse{\boolean{singlecolumn}}{\abscontentformatted}{\abscontent}}{}
+
+\section{Introduction}
+Intro
+
+\section{Data Collection}
+Write about data collection process.
+
+\section{Changepoint Detection}
+Changepoint detection results.
+
+
+\section{Temporal Motifs }
+Temporal Motifs results.
+
+
+\section{Graph Visualization }
+Visualization of graph
+
+
+% Bibliography
+\bibliography{pnas-sample}
+\end{document}
